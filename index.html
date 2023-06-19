@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/ParkerWebGLTestURLVideo.loader.js";
+      var loaderUrl = buildUrl + "/BTV_WebGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/ParkerWebGLTestURLVideo.data.br",
-        frameworkUrl: buildUrl + "/ParkerWebGLTestURLVideo.framework.js.br",
-        codeUrl: buildUrl + "/ParkerWebGLTestURLVideo.wasm.br",
+        dataUrl: buildUrl + "/BTV_WebGL.data.br",
+        frameworkUrl: buildUrl + "/BTV_WebGL.framework.js.br",
+        codeUrl: buildUrl + "/BTV_WebGL.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "MISSIM",
         productName: "BancadaVirtualParker_v1.1_WebGL",
@@ -95,8 +95,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1920px";
+        canvas.style.height = "1080px";
       }
 
       loadingBar.style.display = "block";
