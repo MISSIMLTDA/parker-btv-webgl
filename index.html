@@ -17,9 +17,6 @@
         </div>
       </div>
       <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-build-title">BancadaVirtualParker_WebGL</div>
-      </div>
     </div>
     <script>
         var container = document.querySelector("#unity-container");
@@ -112,10 +109,7 @@
 
     window.addEventListener('beforeunload', (event) => {
         event.returnValue = `Are you sure you want to leave?`;
-    });
-
-    window.addEventListener("unload", (event) => {
-         myGameInstance.SendMessage("UGS_Analytics", "TimeExploringFreelyEvent");
+        myGameInstance.SendMessage("UGS_Analytics", "TimeExploringFreelyEvent");
     });
 
       document.body.appendChild(script);
